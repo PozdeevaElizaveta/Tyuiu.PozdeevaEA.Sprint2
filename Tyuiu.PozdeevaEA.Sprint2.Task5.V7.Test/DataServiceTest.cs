@@ -9,18 +9,18 @@ namespace Tyuiu.PozdeevaEA.Sprint2.Task5.V7.Test
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Январь",ds.FindMonthName(0,0));
-            Assert.AreEqual("Февраль",ds.FindMonthName(0, 1));
-            Assert.AreEqual("Март", ds.FindMonthName(0, 2));
-            Assert.AreEqual("Апрель",ds.FindMonthName(0, 3));
-            Assert.AreEqual("Май",  ds.FindMonthName(0, 4));
-            Assert.AreEqual("Июнь",     ds.FindMonthName(0, 5));
-            Assert.AreEqual("Июль", ds.FindMonthName(0, 6));
-            Assert.AreEqual("Август", ds.FindMonthName(0, 7));
-            Assert.AreEqual("Сентябрь", ds.FindMonthName(0, 8));
-            Assert.AreEqual("Октябрь", ds.FindMonthName(0, 9));
-            Assert.AreEqual("Ноябрь", ds.FindMonthName(0, 10));
-            Assert.AreEqual("Декабрь", ds.FindMonthName(0, 11));
+            Assert.AreEqual("январь",ds.FindMonthName(0,0));
+            Assert.AreEqual("февраль",ds.FindMonthName(0, 1));
+            Assert.AreEqual("март", ds.FindMonthName(0, 2));
+            Assert.AreEqual("апрель",ds.FindMonthName(0, 3));
+            Assert.AreEqual("май",  ds.FindMonthName(0, 4));
+            Assert.AreEqual("июнь",     ds.FindMonthName(0, 5));
+            Assert.AreEqual("июль", ds.FindMonthName(0, 6));
+            Assert.AreEqual("август", ds.FindMonthName(0, 7));
+            Assert.AreEqual("сентябрь", ds.FindMonthName(0, 8));
+            Assert.AreEqual("октябрь", ds.FindMonthName(0, 9));
+            Assert.AreEqual("ноябрь", ds.FindMonthName(0, 10));
+            Assert.AreEqual("декабрь", ds.FindMonthName(0, 11));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
